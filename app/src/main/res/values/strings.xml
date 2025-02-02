@@ -11,4 +11,11 @@
     <string name="btnBack">Regresar</string>
     <string name="btnActivity">Lanzar actividad</string>
 
+    <!-- Strings Excercise 1 FHC-->
+    <string name="initialTitle">Hola!</string>
+    <string name="btnNavegador">Ir a YouTube</string>
+    <string name="btnExit">Salir</string>
+    <string name="txtDefault">default</string>
+
+
 </resources>

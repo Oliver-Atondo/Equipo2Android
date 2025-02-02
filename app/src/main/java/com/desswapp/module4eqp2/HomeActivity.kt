@@ -1,11 +1,13 @@
 package com.desswapp.module4eqp2
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.desswapp.module4eqp2.excercise.home.fernando_hernandez.InitialActivityFHC
 
 class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,23 +24,28 @@ class HomeActivity : AppCompatActivity() {
         val btnMember2 = findViewById<Button>(R.id.btnMember2)
         val btnMember3 = findViewById<Button>(R.id.btnMember3)
         val btnMember4 = findViewById<Button>(R.id.btnMember4)
+        val btnExit = findViewById<Button>(R.id.btnExit)
 
-        btnMember1.setOnClickListener {
+        btnMember1.setOnClickListener { // Olvera Meza Allison Montserrat
             // Acción para el botón 1
         }
 
-        btnMember2.setOnClickListener {
+        btnMember2.setOnClickListener { // Atondo Gastelum Oliver Daniel
             // Acción para el botón 2
         }
 
-        btnMember3.setOnClickListener {
+        btnMember3.setOnClickListener { // Perez Valdez Edgar Michael
             // Acción para el botón 3
         }
 
-        btnMember4.setOnClickListener {
-            // Acción para el botón 4
+        btnMember4.setOnClickListener { // Hernández Calderón Fernando
+            val intent = Intent(this, InitialActivityFHC::class.java)
+            startActivity(intent)
         }
 
+        btnExit.setOnClickListener {
+            finish()
+        }
 
     }
 }
