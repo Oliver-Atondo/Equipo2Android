@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Module4Eqp2</string>
+
+    <string name="title">Equipo 2</string>
+    <string name="equip">Integrantes:</string>
+    <string name="member1">Olvera Meza Allison Montserrat</string>
+    <string name="member2">Atondo Gastelum Oliver Daniel</string>
+    <string name="member3">Perez Valdez Edgar Michael</string>
+    <string name="member4">Hernández Calderón Fernando</string>
+
+    <string name="btnBack">Regresar</string>
+    <string name="btnActivity">Lanzar actividad</string>
+
+</resources>
