@@ -7,6 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.desswapp.module4eqp2.excercise.home.edgarmichaelperezvaldez.InitialActivityEMPV
 import com.desswapp.module4eqp2.excercise.home.fernando_hernandez.InitialActivityFHC
 
 class HomeActivity : AppCompatActivity() {
@@ -35,7 +36,8 @@ class HomeActivity : AppCompatActivity() {
         }
 
         btnMember3.setOnClickListener { // Perez Valdez Edgar Michael
-            // Acción para el botón 3
+            val intent = Intent( this, InitialActivityEMPV::class.java)
+            startActivity(intent)
         }
 
         btnMember4.setOnClickListener { // Hernández Calderón Fernando
