@@ -29,7 +29,8 @@ class HomeActivity : AppCompatActivity() {
         val btnExit = findViewById<Button>(R.id.btnExit)
 
         btnMember1.setOnClickListener { // Olvera Meza Allison Montserrat
-            // Acción para el botón 1
+            val intent = Intent(this, InitialActivityAMOM::class.java)
+            startActivity(intent)
         }
 
         btnMember2.setOnClickListener { // Atondo Gastelum Oliver Daniel
