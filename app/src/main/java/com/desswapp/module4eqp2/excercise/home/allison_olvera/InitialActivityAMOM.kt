@@ -1,4 +1,4 @@
-package com.example.androidmodule1.exercise.home.AllisonOlvera
+package com.desswapp.module4eqp2.excercise.home.allison_olvera
 
 import android.content.Intent
 import android.net.Uri
@@ -11,7 +11,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.androidmodule1.R
+import com.desswapp.module4eqp2.R
 
 class InitialActivityAMOM : AppCompatActivity() {
 
