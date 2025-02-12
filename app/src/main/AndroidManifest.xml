@@ -12,17 +12,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Module4Eqp2"
         tools:targetApi="31">
-	<activity
+        <activity
+            android:name=".excercise.home.oliver_atondo.excercise2.Excercise2Oliver"
+            android:exported="false" />
+        <activity
             android:name=".excercise.home.allison_olvera.InitialActivityAMOM"
             android:exported="false" />
         <activity
             android:name=".excercise.home.allison_olvera.SecondActivityAMOM"
             android:exported="false" />
-	<activity
-            android:name=".excercise.home.oliver_atondo.SecondActivityOAG"
+        <activity
+            android:name=".excercise.home.oliver_atondo.excersice1.SecondActivityOAG"
             android:exported="false" />
         <activity
-            android:name=".excercise.home.oliver_atondo.InitialActivityOAG"
+            android:name=".excercise.home.oliver_atondo.excersice1.InitialActivityOAG"
             android:exported="false" />
         <activity
             android:name=".excercise.home.edgarmichaelperezvaldez.SecondActivityEMPV"

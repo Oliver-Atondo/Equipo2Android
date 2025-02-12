@@ -9,8 +9,9 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.desswapp.module4eqp2.excercise.home.edgarmichaelperezvaldez.InitialActivityEMPV
 import com.desswapp.module4eqp2.excercise.home.fernando_hernandez.InitialActivityFHC
-import com.desswapp.module4eqp2.excercise.home.oliver_atondo.InitialActivityOAG
+import com.desswapp.module4eqp2.excercise.home.oliver_atondo.excersice1.InitialActivityOAG
 import com.desswapp.module4eqp2.excercise.home.allison_olvera.InitialActivityAMOM
+import com.desswapp.module4eqp2.excercise.home.oliver_atondo.excercise2.Excercise2Oliver
 
 class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,7 +36,7 @@ class HomeActivity : AppCompatActivity() {
         }
 
         btnMember2.setOnClickListener { // Atondo Gastelum Oliver Daniel
-            val intent = Intent(this, InitialActivityOAG::class.java)
+            val intent = Intent(this, Excercise2Oliver::class.java)
             startActivity(intent)
         }
 
