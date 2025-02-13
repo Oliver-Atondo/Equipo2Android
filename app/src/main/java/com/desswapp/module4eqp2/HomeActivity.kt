@@ -31,7 +31,7 @@ class HomeActivity : AppCompatActivity() {
         val btnExit = findViewById<Button>(R.id.btnExit)
 
         btnMember1.setOnClickListener { // Olvera Meza Allison Montserrat
-            val intent = Intent(this, MainMenuActivity ::class.java)
+            val intent = Intent(this, InitialActivityAMOM::class.java)
             startActivity(intent)
         }
 

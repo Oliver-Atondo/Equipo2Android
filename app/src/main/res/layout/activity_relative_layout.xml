@@ -5,68 +5,82 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".excercise.home.allison_olvera.exercise2.RelativeLayoutActivity">
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".excercise.home.fernando_hernandez.exercise2.RelativeLayoutActivity">
 
     <TextView
-        android:background="@android:color/holo_blue_light"
-        android:text="Ingresa tus datos:"
-        android:textSize="21sp"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
+        android:id="@+id/tvTitulo"
         android:layout_width="match_parent"
-        android:layout_height="40dp"/>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40sp"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:text="@string/relativeLTitle"
+        />
 
-    <EditText
-        android:id="@+id/etUser"
-        android:hint="Ingresa usuario"
-        android:textAlignment="center"
-        android:layout_centerInParent="true"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tvComponentsUse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitulo"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:text="usado: CheckBox"
+        />
 
-    <EditText
-        android:id="@+id/etPassword"
-        android:hint="Ingresa contraseña"
-        android:textAlignment="center"
-        android:layout_marginTop="15dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/etUser"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"/>
+    <CheckBox
+        android:id="@+id/cbAgree"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitulo"
+        android:text="@string/cbAgree"/>
 
-    <EditText
-        android:id="@+id/etYear"
-        android:hint="Ingresa edad"
-        android:textAlignment="center"
-        android:layout_marginTop="15dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/etPassword"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"/>
+    <CheckBox
+        android:id="@+id/cbPrivacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cbAgree"
+        android:text="@string/cbPrivacy"/>
+
+    <TextView
+        android:id="@+id/etAvance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/cbPrivacy"
+        android:layout_marginStart="40dp"
+        android:text="@string/avance"
+        android:textSize="24sp" />
+
+    <ProgressBar
+        android:id="@+id/pbAvance"
+        android:layout_below="@id/etAvance"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="140dp"/>
 
     <Button
-        android:id="@+id/btnEnter"
-        android:text="Entrar"
-        android:layout_width="150dp"
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginBottom="30dp"
-        android:layout_alignParentBottom="true"/>
+        android:layout_below="@id/pbAvance"
+        android:text="@string/btnSiguiente"
+        android:layout_margin="40sp"
+        android:layout_alignStart="@id/pbAvance"
+        android:layout_alignEnd="@id/pbAvance"
+        />
 
     <Button
-        android:id="@+id/btnExit"
-        android:text="Salir"
-        style="?attr/materialButtonOutlinedStyle"
-        app:strokeColor="@color/black"
-        android:textColor="@color/black"
-        android:layout_width="150dp"
+        android:id="@+id/btnBack"
+        android:layout_below="@id/btnNext"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/btnEnter"
-        android:layout_marginStart="50dp"
-        android:layout_marginBottom="30dp"
-        android:layout_alignParentBottom="true"/>
+        android:text="@string/btnBack"
+        android:layout_margin="40sp"
+        android:layout_alignStart="@id/pbAvance"
+        android:layout_alignEnd="@id/pbAvance" />
 
 </RelativeLayout>
