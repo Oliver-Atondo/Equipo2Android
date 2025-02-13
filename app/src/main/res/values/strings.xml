@@ -18,4 +18,53 @@
     <string name="txtDefault">default</string>
 
 
+    <!-- Strings homework FHC-->
+    <string name="signupHW">Registro</string>
+    <string name="nameHW">Nombre</string>
+    <string name="lastnameHW">Apellido(s)</string>
+    <string name="fullnameHW">Nombre completo</string>
+    <string name="emailHW">Correo eléctronico</string>
+    <string name="genderHW">Genero</string>
+    <string name="tpasswordHW">Establecer contraseña</string>
+    <string name="passwordHW">Contraseña</string>
+    <string name="repasswordHW">Confirmar contraseña</string>
+    <string name="genderHHW">Hombre</string>
+    <string name="genderWHW">Mujer</string>
+    <string name="genderOHW">Otro</string>
+    <string name="registerHW">Registrar</string>
+    <string name="descriptionSignUpHW">Icono de usuario</string>
+    <string name="showPassHW">Mostrar contraseña</string>
+    <string name="accountHW">Cuenta</string>
+    <string name="exercise">Ejercicios</string>
+    <string name="homework">Tarea</string>
+    <string name="finalExercise">Ejercicio Final</string>
+    <string name="goExercise1">Ir a ejercicio 1</string>
+    <string name="goExercise2">Ir a ejercicio 2</string>
+    <string name="goHomeWork">Ir a Tarea</string>
+    <string name="goFinalExercise">Ir a Ejercicio final</string>
+
+    <!-- Strings Excercise 2 FHC -->
+    <string name="frameLTitle">Frame Layout</string>
+    <string name="linearLTitle">Linear Layout</string>
+    <string name="relativeLTitle">Relative Layout</string>
+    <string name="constraintLTitle">Constraint Layout</string>
+    <string name="btnSiguiente">Siguiente Layout</string>
+    <string name="avance">Uso de componentes</string>
+    <string name="edittext">Escribe tu nombre</string>
+    <string name="cbAgree">Acepto los términos y condiciones</string>
+    <string name="cbPrivacy">Politica de privacidad</string>
+
+
+
+    <!-- Strings errores -->
+    <string name="errPasswordHW">Error en contraseña</string>
+    <string name="errPasswordLengthHW">longitud insuficiente</string>
+    <string name="errPasswordSecurityHW">Contraseña no segura</string>
+    <string name="errPasswordDifferentHW">Las contraseñas no coinciden</string>
+    <string name="errEmptyHW">Campo requerido</string>
+    <string name="errEmailHW">Correo inválido</string>
+    <string name="errGenderHW">Genero requerido</string>
+    <string name="errGeneralHW">Revise datos ingresados</string>
+
+
 </resources>

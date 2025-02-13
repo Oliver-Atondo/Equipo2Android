@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bakcground"
-    tools:context=".excercise.home.fernando_hernandez.SecondActivityFHC">
+    tools:context=".excercise.home.fernando_hernandez.exercise1.SecondActivityFHC">
 
     <ImageView
         android:id="@+id/imgUser"

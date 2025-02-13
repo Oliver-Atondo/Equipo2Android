@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".excercise.home.fernando_hernandez.exercise2.RelativeLayoutActivity">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40sp"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:text="@string/relativeLTitle"
+        />
+
+    <TextView
+        android:id="@+id/tvComponentsUse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitulo"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:text="usado: CheckBox"
+        />
+
+    <CheckBox
+        android:id="@+id/cbAgree"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitulo"
+        android:text="@string/cbAgree"/>
+
+    <CheckBox
+        android:id="@+id/cbPrivacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cbAgree"
+        android:text="@string/cbPrivacy"/>
+
+    <TextView
+        android:id="@+id/etAvance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/cbPrivacy"
+        android:layout_marginStart="40dp"
+        android:text="@string/avance"
+        android:textSize="24sp" />
+
+    <ProgressBar
+        android:id="@+id/pbAvance"
+        android:layout_below="@id/etAvance"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="140dp"/>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pbAvance"
+        android:text="@string/btnSiguiente"
+        android:layout_margin="40sp"
+        android:layout_alignStart="@id/pbAvance"
+        android:layout_alignEnd="@id/pbAvance"
+        />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_below="@id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnBack"
+        android:layout_margin="40sp"
+        android:layout_alignStart="@id/pbAvance"
+        android:layout_alignEnd="@id/pbAvance" />
+
+</RelativeLayout>
