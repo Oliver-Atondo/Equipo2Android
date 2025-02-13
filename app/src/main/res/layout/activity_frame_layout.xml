@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".excercise.home.allison_olvera.exercise2.FrameLayoutActivity">
+
+    <TextView
+        android:background="@android:color/holo_orange_dark"
+        android:text="Texto superior izquierda"
+        android:layout_gravity="start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:background="@android:color/holo_purple"
+        android:text="Texto superior derecha"
+        android:layout_gravity="end|top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:background="@android:color/black"
+        android:layout_gravity="start|center"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:background="@android:color/holo_blue_dark"
+        android:text="Texto central dentro de Framelayout"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:background="@android:color/black"
+        android:layout_gravity="end|center"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:background="@android:color/holo_red_light"
+        android:text="Texto inferior derecha"
+        android:layout_gravity="bottom|end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:background="@android:color/holo_green_dark"
+        android:text="Texto superior izquierda"
+        android:layout_gravity="start|bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</FrameLayout>
