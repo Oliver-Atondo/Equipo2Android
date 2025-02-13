@@ -12,6 +12,7 @@ import com.desswapp.module4eqp2.excercise.home.fernando_hernandez.InitialActivit
 import com.desswapp.module4eqp2.excercise.home.oliver_atondo.excersice1.InitialActivityOAG
 import com.desswapp.module4eqp2.excercise.home.allison_olvera.InitialActivityAMOM
 import com.desswapp.module4eqp2.excercise.home.allison_olvera.MainMenuActivity
+import com.desswapp.module4eqp2.excercise.home.oliver_atondo.MenuDeOliver
 import com.desswapp.module4eqp2.excercise.home.oliver_atondo.excercise2.Excercise2Oliver
 
 class HomeActivity : AppCompatActivity() {
@@ -37,7 +38,7 @@ class HomeActivity : AppCompatActivity() {
         }
 
         btnMember2.setOnClickListener { // Atondo Gastelum Oliver Daniel
-            val intent = Intent(this, Excercise2Oliver::class.java)
+            val intent = Intent(this, MenuDeOliver::class.java)
             startActivity(intent)
         }
 
