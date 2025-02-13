@@ -65,5 +65,10 @@
     <string name="errGenderHW">Genero requerido</string>
     <string name="errGeneralHW">Revise datos ingresados</string>
 
+    <string name="hint_nombre">Nombre</string>
+    <string name="hint_apellido">Apellido</string>
+    <string name="hint_correo">Correo electrónico</string>
+    <string name="hint_contraseña">Contraseña</string>
+    <string name="button_registrar">Registrar</string>
 
 </resources>
