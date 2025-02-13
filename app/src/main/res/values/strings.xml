@@ -55,7 +55,6 @@
     <string name="cbPrivacy">Politica de privacidad</string>
 
 
-
     <!-- Strings errores -->
     <string name="errPasswordHW">Error en contraseña</string>
     <string name="errPasswordLengthHW">longitud insuficiente</string>

@@ -11,6 +11,7 @@ import com.desswapp.module4eqp2.excercise.home.edgarmichaelperezvaldez.InitialAc
 import com.desswapp.module4eqp2.excercise.home.fernando_hernandez.InitialActivityFHC
 import com.desswapp.module4eqp2.excercise.home.oliver_atondo.excersice1.InitialActivityOAG
 import com.desswapp.module4eqp2.excercise.home.allison_olvera.InitialActivityAMOM
+import com.desswapp.module4eqp2.excercise.home.allison_olvera.MainMenuActivity
 import com.desswapp.module4eqp2.excercise.home.oliver_atondo.excercise2.Excercise2Oliver
 
 class HomeActivity : AppCompatActivity() {
@@ -31,7 +32,7 @@ class HomeActivity : AppCompatActivity() {
         val btnExit = findViewById<Button>(R.id.btnExit)
 
         btnMember1.setOnClickListener { // Olvera Meza Allison Montserrat
-            val intent = Intent(this, InitialActivityAMOM::class.java)
+            val intent = Intent(this, MainMenuActivity ::class.java)
             startActivity(intent)
         }
 
