@@ -1,4 +1,4 @@
-package com.desswapp.module4eqp2.excercise.home.fernando_hernandez
+package com.desswapp.module4eqp2.excercise.home.fernando_hernandez.exercise1
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,7 +9,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.desswapp.module4eqp2.R
-import java.util.Locale
 
 class SecondActivityFHC : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

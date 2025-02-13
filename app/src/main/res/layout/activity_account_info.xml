@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homework.fernando_hernandez.AccountInfoActivity">
+
+    <TextView
+        android:id="@+id/tvTitleAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:text="@string/accountHW"
+        android:textSize="20sp"
+        />
+
+    <ImageView
+        android:id="@+id/ivUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/tvTitleAccount"
+        android:contentDescription="@string/descriptionSignUpHW"
+        app:srcCompat="@drawable/user" />
+
+    <TextView
+        android:id="@+id/tvTitleFullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/ivUser"
+        android:layout_below="@id/ivUser"
+        android:layout_marginTop="30dp"
+        android:text="@string/fullnameHW"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/tvFullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/tvTitleFullName"
+        android:layout_marginTop="30dp"
+        android:textSize="12sp"
+         />
+
+    <TextView
+        android:id="@+id/tvTitleEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/ivUser"
+        android:layout_below="@+id/tvFullName"
+        android:layout_marginTop="30dp"
+        android:text="@string/emailHW"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/tvTitleEmail"
+        android:layout_marginTop="30dp"
+        android:textSize="12sp"
+         />
+
+    <TextView
+        android:id="@+id/tvTitleGener"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/ivUser"
+        android:layout_below="@+id/tvEmail"
+        android:layout_marginTop="30dp"
+        android:text="@string/genderHW"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/tvGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/tvTitleGener"
+        android:layout_marginTop="30dp"
+        android:textSize="12sp"
+         />
+
+    <TextView
+        android:id="@+id/tvTitlePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/ivUser"
+        android:layout_below="@id/tvGender"
+        android:layout_marginTop="30dp"
+        android:text="@string/passwordHW"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/tvPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/tvTitlePassword"
+        android:layout_marginTop="30dp"
+        android:textSize="12sp"
+         />
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnExit"
+        android:layout_below="@id/tvPassword"
+        android:layout_marginTop="25dp"
+        android:layout_centerInParent="true"
+        />
+
+
+</RelativeLayout>
