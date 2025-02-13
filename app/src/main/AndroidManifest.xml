@@ -16,6 +16,18 @@
             android:name=".excercise.home.oliver_atondo.excercise2.Excercise2Oliver"
             android:exported="false" />
         <activity
+            android:name=".excercise.home.fernando_hernandez.exercise2.ConstraintLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".excercise.home.fernando_hernandez.exercise2.RelativeLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".excercise.home.fernando_hernandez.exercise2.LinearLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".excercise.home.fernando_hernandez.exercise2.LaunchGraphicLayoutsActivity"
+            android:exported="false"/>
+        <activity
             android:name=".excercise.home.allison_olvera.InitialActivityAMOM"
             android:exported="false" />
         <activity
@@ -37,7 +49,10 @@
             android:name=".excercise.home.edgarmichaelperezvaldez.InitialActivityEMPV"
             android:exported="false" />
         <activity
-            android:name=".excercise.home.fernando_hernandez.SecondActivityFHC"
+            android:name=".excercise.home.fernando_hernandez.exercise1.PrimaryActivityFHC"
+            android:exported="false" />
+        <activity
+            android:name=".excercise.home.fernando_hernandez.exercise1.SecondActivityFHC"
             android:exported="false" />
         <activity
             android:name=".excercise.home.fernando_hernandez.InitialActivityFHC"

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".excercise.home.fernando_hernandez.exercise2.LaunchGraphicLayoutsActivity">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40sp"
+        android:layout_marginStart="40sp"
+        android:text="@string/frameLTitle"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tvComponentsUse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80sp"
+        android:layout_marginStart="40sp"
+        android:text="Usados: EditText; TextView; Button"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/etAviso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:autofillHints=""
+        android:hint="@string/edittext"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/etAvance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="180dp"
+        android:text="@string/avance"
+        android:textSize="24sp" />
+
+    <ProgressBar
+        android:id="@+id/pbAvance"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="140dp"/>
+
+    <Button
+        android:id="@+id/btnSiguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnSiguiente"
+        android:layout_gravity="bottom|center"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="90dp" />
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "@string/btnExit"
+        android:layout_gravity="bottom|center"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp" />
+
+
+</FrameLayout>

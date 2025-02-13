@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".excercise.home.fernando_hernandez.exercise2.LinearLayoutActivity">
+
+    <TextView
+        android:id="@+id/mensageTitle"
+        android:layout_weight="1"
+        android:text="@string/linearLTitle"
+        android:layout_width="wrap_content"
+        android:textSize="24sp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/componentUse"
+        android:layout_weight="1"
+        android:text="Usados: ImageView; ImageButton"
+        android:layout_width="wrap_content"
+        android:textSize="12sp"
+        android:layout_height="wrap_content"/>
+
+    <ImageButton
+        android:id="@+id/btnImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/show"/>
+
+    <ImageView
+        android:id="@+id/btnImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/unshow"
+        android:layout_weight="1"
+    />
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:paddingTop="30dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/etAvance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/avance"
+            android:textSize="24sp" />
+
+        <ProgressBar
+            android:id="@+id/pbAvance"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="140dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnSiguiente"
+        android:layout_gravity="bottom|center"
+        android:layout_marginStart="40sp"
+        android:layout_marginEnd="40sp"
+        android:layout_marginBottom="40sp" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnBack"
+        android:layout_gravity="bottom|center"
+        android:layout_marginStart="40sp"
+        android:layout_marginEnd="40sp"
+        android:layout_marginBottom="40sp" />
+
+</LinearLayout>
