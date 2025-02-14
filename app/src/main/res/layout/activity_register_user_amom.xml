@@ -5,11 +5,6 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".excercise.home.allison_olvera.exercise2.recyclerview.RecyclerViewActivity">
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvSeries"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+    tools:context=".homework.allison_olvera.RegisterUserActivityAMOM">
 
 </androidx.constraintlayout.widget.ConstraintLayout>

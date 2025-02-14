@@ -1,6 +1,5 @@
 package com.desswapp.module4eqp2.excercise.home.allison_olvera.exercise2
 
-import ComponentsActivity
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -9,12 +8,14 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.desswapp.module4eqp2.R
-import com.desswapp.module4eqp2.excercise.home.allison_olvera.MainMenuActivity
-import com.desswapp.module4eqp2.excercise.home.allison_olvera.excercise2.LinearLayoutActivity
-import com.desswapp.module4eqp2.excercise.home.allison_olvera.exercise2.recyclerview.RecyclerViewActivity
+import com.desswapp.module4eqp2.excercise.home.allison_olvera.MainMenuActivityAMOM
+import com.desswapp.module4eqp2.excercise.home.allison_olvera.excercise2.ComponentsActivityAMOM
+import com.desswapp.module4eqp2.excercise.home.allison_olvera.excercise2.LinearLayoutActivityAMOM
+import com.desswapp.module4eqp2.excercise.home.allison_olvera.excercise2.RelativeLayoutActivityAMOM
+import com.desswapp.module4eqp2.excercise.home.allison_olvera.exercise2.recyclerview.RecyclerViewActivityAMOM
 import com.desswapp.module4eqp2.excercise.home.fernando_hernandez.exercise2.RelativeLayoutActivity
 
-class MenuExercise2Activity : AppCompatActivity() {
+class MenuExercise2ActivityAMOM : AppCompatActivity() {
     private lateinit var btnExit : Button
     private lateinit var btnFrameLayout : Button
     private lateinit var btnLinearLayout : Button
@@ -26,7 +27,7 @@ class MenuExercise2Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_menu_exercise2)
+        setContentView(R.layout.activity_menu_exercise_amom)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -36,37 +37,36 @@ class MenuExercise2Activity : AppCompatActivity() {
         initViews()
 
         btnExit.setOnClickListener {    //Sale de la app/Regresa al menú inicial
-            val intent = Intent(this, MainMenuActivity::class.java)
-            startActivity(intent)
+            finish()
         }
 
         btnFrameLayout.setOnClickListener {
-            val  intent = Intent(this, FrameLayoutActivity::class.java)
+            val  intent = Intent(this, FrameLayoutActivityAMOM::class.java)
             startActivity(intent)
         }
 
         btnLinearLayout.setOnClickListener {
-            val intent = Intent(this, LinearLayoutActivity::class.java)
+            val intent = Intent(this, LinearLayoutActivityAMOM::class.java)
             startActivity(intent)
         }
 
         btnRelativeLayout.setOnClickListener {
-            val intent = Intent(this, RelativeLayoutActivity::class.java)
+            val intent = Intent(this, RelativeLayoutActivityAMOM::class.java)
             startActivity(intent)
         }
 
         btnConstrainLayout.setOnClickListener {
-            val intent = Intent(this, ConstrainLayoutActivity::class.java)
+            val intent = Intent(this, ConstrainLayoutActivityAMOM::class.java)
             startActivity(intent)
         }
 
         btnRecyclerView.setOnClickListener {
-            val intent = Intent(this, RecyclerViewActivity::class.java)
+            val intent = Intent(this, RecyclerViewActivityAMOM::class.java)
             startActivity(intent)
         }
 
         btnComponents.setOnClickListener {
-            val intent = Intent(this, ComponentsActivity::class.java)
+            val intent = Intent(this, ComponentsActivityAMOM::class.java)
             startActivity(intent)
         }
     }

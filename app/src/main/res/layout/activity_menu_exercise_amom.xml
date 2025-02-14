@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#80C3C3C3"
-    tools:context=".excercise.home.allison_olvera.exercise2.MenuExercise2Activity">
+    tools:context=".excercise.home.allison_olvera.exercise2.MenuExercise2ActivityAMOM">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/glStart"

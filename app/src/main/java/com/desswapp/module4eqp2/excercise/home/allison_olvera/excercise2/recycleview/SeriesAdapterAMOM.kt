@@ -7,14 +7,14 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.desswapp.module4eqp2.R
 
-class  SeriesAdapter(val list: List<SeriesEntity>) : RecyclerView.Adapter<SeriesAdapter.SeriesViewHolder>() {
+class  SeriesAdapterAMOM(val list: List<SeriesEntityAMOM>) : RecyclerView.Adapter<SeriesAdapterAMOM.SeriesViewHolder>() {
     class SeriesViewHolder(view: View): RecyclerView.ViewHolder(view){
         val tvName = view.findViewById<TextView>(R.id.tvName)
         val tvSeason = view.findViewById<TextView>(R.id.tvSeason)
         val tvYear = view.findViewById<TextView>(R.id.tvYear)
         val tvWhereToLook = view.findViewById<TextView>(R.id.tvWhereToLook)
 
-        fun render(seriesEntity: SeriesEntity){
+        fun render(seriesEntity: SeriesEntityAMOM){
             tvName.text = seriesEntity.name
             tvSeason.text = seriesEntity.season
             tvYear.text = seriesEntity.year
@@ -23,7 +23,7 @@ class  SeriesAdapter(val list: List<SeriesEntity>) : RecyclerView.Adapter<Series
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SeriesViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_series, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_series_amom, parent, false)
         return SeriesViewHolder(view)
     }
 

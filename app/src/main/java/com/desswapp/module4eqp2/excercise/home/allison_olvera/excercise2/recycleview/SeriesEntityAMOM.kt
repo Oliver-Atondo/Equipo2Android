@@ -1,6 +1,6 @@
 package com.desswapp.module4eqp2.excercise.home.allison_olvera.exercise2.recyclerview
 
-data class SeriesEntity(
+data class SeriesEntityAMOM(
     val name : String,
     val season : String,
     val year: String,

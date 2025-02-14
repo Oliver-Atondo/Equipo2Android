@@ -9,7 +9,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.desswapp.module4eqp2.excercise.home.edgarmichaelperezvaldez.InitialActivityEMPV
 import com.desswapp.module4eqp2.excercise.home.fernando_hernandez.InitialActivityFHC
-import com.desswapp.module4eqp2.excercise.home.allison_olvera.MainMenuActivity
+import com.desswapp.module4eqp2.excercise.home.allison_olvera.MainMenuActivityAMOM
 import com.desswapp.module4eqp2.excercise.home.oliver_atondo.MenuDeOliver
 
 class HomeActivity : AppCompatActivity() {
@@ -30,7 +30,7 @@ class HomeActivity : AppCompatActivity() {
         val btnExit = findViewById<Button>(R.id.btnExit)
 
         btnMember1.setOnClickListener { // Olvera Meza Allison Montserrat
-            val intent = Intent(this, MainMenuActivity ::class.java)
+            val intent = Intent(this, MainMenuActivityAMOM ::class.java)
             startActivity(intent)
         }
 

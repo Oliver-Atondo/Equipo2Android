@@ -1,4 +1,5 @@
-import android.content.Intent
+package com.desswapp.module4eqp2.excercise.home.allison_olvera.excercise2
+
 import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
@@ -17,9 +18,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.desswapp.module4eqp2.R
-import com.desswapp.module4eqp2.excercise.home.allison_olvera.exercise2.MenuExercise2Activity
 
-class ComponentsActivity : AppCompatActivity() {
+class ComponentsActivityAMOM : AppCompatActivity() {
 
     private lateinit var tvExample : TextView //Es una variable que se incializa después
     private lateinit var etExample : EditText
@@ -52,7 +52,7 @@ class ComponentsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_components)
+        setContentView(R.layout.activity_components_amom)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -102,9 +102,9 @@ class ComponentsActivity : AppCompatActivity() {
                 val itemSelected = data[position]
 
                 if (position == 0){
-                    Toast.makeText(this@ComponentsActivity, "Item no seleccionado", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@ComponentsActivityAMOM, "Item no seleccionado", Toast.LENGTH_SHORT).show()
                 }else{
-                    Toast.makeText(this@ComponentsActivity, "Item seleccionado: $itemSelected", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@ComponentsActivityAMOM, "Item seleccionado: $itemSelected", Toast.LENGTH_SHORT).show()
                 }
             }
 
@@ -123,8 +123,7 @@ class ComponentsActivity : AppCompatActivity() {
 //        }
 
         btnExit.setOnClickListener {    //Sale de la app/Regresa al menú inicial
-            val intent = Intent(this, MenuExercise2Activity::class.java)
-            startActivity(intent)
+            finish()
         }
 
     }

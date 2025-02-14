@@ -12,43 +12,52 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Module4Eqp2"
         tools:targetApi="31">
-
-
-
-
-        <activity android:name=".excercise.home.oliver_atondo.MenuDeOliver" android:exported="true" />
-        <activity android:name=".excercise.home.oliver_atondo.tarea.RegisterActivityOliver" android:exported="true"/>
-        <activity android:name=".excercise.home.oliver_atondo.tarea.ResultActivityOliver" android:exported="true" />
-
-
         <activity
-            android:name=".excercise.home.allison_olvera.excercise2.LinearLayoutActivity"
+            android:name=".excercise.home.allison_olvera.excercise2.ComponentsActivityAMOM"
             android:exported="false" />
         <activity
-            android:name=".excercise.home.allison_olvera.MainMenuActivity"
+            android:name=".excercise.home.allison_olvera.excercise2.RelativeLayoutActivityAMOM"
+            android:exported="false" />
+        <activity
+            android:name=".homework.allison_olvera.RegisterUserActivityAMOM"
+            android:exported="false" />
+        <activity
+            android:name=".excercise.home.oliver_atondo.MenuDeOliver"
+            android:exported="true" />
+        <activity
+            android:name=".excercise.home.oliver_atondo.tarea.RegisterActivityOliver"
+            android:exported="true" />
+        <activity
+            android:name=".excercise.home.oliver_atondo.tarea.ResultActivityOliver"
+            android:exported="true" />
+        <activity
+            android:name=".excercise.home.allison_olvera.excercise2.LinearLayoutActivityAMOM"
+            android:exported="false" />
+        <activity
+            android:name=".excercise.home.allison_olvera.MainMenuActivityAMOM"
             android:exported="false" />
         <activity
             android:name=".excercise.home.oliver_atondo.excercise2.Excercise2Oliver"
             android:exported="false" />
         <activity
-            android:name=".excercise.home.allison_olvera.exercise2.recyclerview.SeriesEntity"
+            android:name=".excercise.home.allison_olvera.exercise2.recyclerview.SeriesEntityAMOM"
             android:exported="false"
             tools:ignore="Instantiatable" />
         <activity
-            android:name=".excercise.home.allison_olvera.exercise2.recyclerview.SeriesAdapter"
+            android:name=".excercise.home.allison_olvera.exercise2.recyclerview.SeriesAdapterAMOM"
             android:exported="false"
             tools:ignore="Instantiatable" />
         <activity
-            android:name=".excercise.home.allison_olvera.exercise2.MenuExercise2Activity"
+            android:name=".excercise.home.allison_olvera.exercise2.MenuExercise2ActivityAMOM"
             android:exported="false" />
         <activity
-            android:name=".excercise.home.allison_olvera.exercise2.recyclerview.RecyclerViewActivity"
+            android:name=".excercise.home.allison_olvera.exercise2.recyclerview.RecyclerViewActivityAMOM"
             android:exported="false" />
         <activity
-            android:name=".excercise.home.allison_olvera.exercise2.ConstrainLayoutActivity"
+            android:name=".excercise.home.allison_olvera.exercise2.ConstrainLayoutActivityAMOM"
             android:exported="false" />
         <activity
-            android:name=".excercise.home.allison_olvera.exercise2.FrameLayoutActivity"
+            android:name=".excercise.home.allison_olvera.exercise2.FrameLayoutActivityAMOM"
             android:exported="false" />
         <activity
             android:name=".excercise.home.fernando_hernandez.exercise2.ConstraintLayoutActivity"
