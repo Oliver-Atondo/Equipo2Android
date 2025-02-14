@@ -63,10 +63,10 @@
             android:name=".excercise.home.fernando_hernandez.exercise2.LaunchGraphicLayoutsActivity"
             android:exported="false" />
         <activity
-            android:name=".excercise.home.allison_olvera.InitialActivityAMOM"
+            android:name=".excercise.home.allison_olvera.exercise1.InitialActivityAMOM"
             android:exported="false" />
         <activity
-            android:name=".excercise.home.allison_olvera.SecondActivityAMOM"
+            android:name=".excercise.home.allison_olvera.exercise1.SecondActivityAMOM"
             android:exported="false" />
         <activity
             android:name=".excercise.home.oliver_atondo.excersice1.SecondActivityOAG"

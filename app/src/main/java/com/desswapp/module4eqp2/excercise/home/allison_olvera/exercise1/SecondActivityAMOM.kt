@@ -1,4 +1,4 @@
-package com.desswapp.module4eqp2.excercise.home.allison_olvera
+package com.desswapp.module4eqp2.excercise.home.allison_olvera.exercise1
 
 import android.content.Intent
 import android.os.Bundle

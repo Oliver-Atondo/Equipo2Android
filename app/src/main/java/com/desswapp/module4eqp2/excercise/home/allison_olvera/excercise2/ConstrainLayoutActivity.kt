@@ -8,7 +8,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.desswapp.module4eqp2.R
-import com.desswapp.module4eqp2.excercise.home.allison_olvera.MainMenuActivity
 
 class ConstrainLayoutActivity : AppCompatActivity() {
 
