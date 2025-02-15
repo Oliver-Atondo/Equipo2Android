@@ -8,12 +8,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.desswapp.module4eqp2.R
-import com.desswapp.module4eqp2.excercise.home.allison_olvera.MainMenuActivityAMOM
 import com.desswapp.module4eqp2.excercise.home.allison_olvera.excercise2.ComponentsActivityAMOM
 import com.desswapp.module4eqp2.excercise.home.allison_olvera.excercise2.LinearLayoutActivityAMOM
 import com.desswapp.module4eqp2.excercise.home.allison_olvera.excercise2.RelativeLayoutActivityAMOM
 import com.desswapp.module4eqp2.excercise.home.allison_olvera.exercise2.recyclerview.RecyclerViewActivityAMOM
-import com.desswapp.module4eqp2.excercise.home.fernando_hernandez.exercise2.RelativeLayoutActivity
 
 class MenuExercise2ActivityAMOM : AppCompatActivity() {
     private lateinit var btnExit : Button

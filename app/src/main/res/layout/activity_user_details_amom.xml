@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homework.allison_olvera.UserDetailsActivityAMOM">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:text="Datos del usuario"
+        android:textSize="30sp"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:background="@color/blue"
+        android:layout_width="260dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTitle"/>
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre:"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvNameUser"
+        app:layout_constraintStart_toStartOf="@+id/tvNameUser"/>
+
+    <TextView
+        android:id="@+id/tvNameUser"
+        android:hint="Ej. Barry"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintBottom_toTopOf="@+id/tvLastNameUser"/>
+
+    <TextView
+        android:id="@+id/tvLastName"
+        android:text="Apellido:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvLastNameUser"
+        app:layout_constraintStart_toStartOf="@+id/tvLastNameUser"/>
+
+    <TextView
+        android:id="@+id/tvLastNameUser"
+        android:hint="Ej. Allen"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNameUser"
+        app:layout_constraintBottom_toTopOf="@+id/tvEmailUser"/>
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:text="Correo electrónico:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvEmailUser"
+        app:layout_constraintStart_toStartOf="@+id/tvEmailUser"/>
+
+    <TextView
+        android:id="@+id/tvEmailUser"
+        android:hint="tu_email@ejemplo.com"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLastNameUser"
+        app:layout_constraintBottom_toTopOf="@+id/tvGenderUser"/>
+
+    <TextView
+        android:id="@+id/tvGender"
+        android:text="Genero:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvGenderUser"
+        app:layout_constraintStart_toStartOf="@+id/tvGenderUser"/>
+
+    <TextView
+        android:id="@+id/tvGenderUser"
+        android:hint="Masculino"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmailUser"
+        app:layout_constraintBottom_toTopOf="@id/tvPasswordUser"/>
+
+    <TextView
+        android:id="@+id/tvPassword"
+        android:text="Contraseña:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvPasswordUser"
+        app:layout_constraintStart_toStartOf="@+id/tvPasswordUser"/>
+
+    <TextView
+        android:id="@+id/tvPasswordUser"
+        android:hint="Contraseña"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGenderUser"
+        app:layout_constraintBottom_toTopOf="@id/btnReturn"/>
+
+    <Button
+        android:id="@+id/btnReturn"
+        android:textColor="@color/white"
+        android:background="@color/blue"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Atras"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvPasswordUser"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnExit"/>
+
+    <Button
+        android:id="@+id/btnExit"
+        style="?attr/materialButtonOutlinedStyle"
+        app:strokeColor="@color/blue"
+        android:textColor="@color/blue"
+        android:text="Salir"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvPasswordUser"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnReturn"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

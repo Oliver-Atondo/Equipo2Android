@@ -9,7 +9,6 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.desswapp.module4eqp2.excercise.home.edgarmichaelperezvaldez.InitialActivityEMPV
 import com.desswapp.module4eqp2.excercise.home.fernando_hernandez.InitialActivityFHC
-import com.desswapp.module4eqp2.excercise.home.allison_olvera.MainMenuActivityAMOM
 import com.desswapp.module4eqp2.excercise.home.oliver_atondo.MenuDeOliver
 
 class HomeActivity : AppCompatActivity() {
