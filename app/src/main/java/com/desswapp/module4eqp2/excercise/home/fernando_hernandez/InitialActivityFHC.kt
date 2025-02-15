@@ -11,6 +11,7 @@ import androidx.core.view.WindowInsetsCompat
 import com.desswapp.module4eqp2.R
 import com.desswapp.module4eqp2.excercise.home.fernando_hernandez.exercise1.PrimaryActivityFHC
 import com.desswapp.module4eqp2.excercise.home.fernando_hernandez.exercise2.LaunchGraphicLayoutsActivity
+import com.desswapp.module4eqp2.homework.fernando_hernandez.SignUpActivity
 
 class InitialActivityFHC : AppCompatActivity() {
 
@@ -36,7 +37,8 @@ class InitialActivityFHC : AppCompatActivity() {
        }
 
         btnHomeWork.setOnClickListener {
-            Toast.makeText(this, "Proximamente", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, SignUpActivity::class.java)
+            startActivity(intent)
         }
 
         btnExercise2.setOnClickListener {
