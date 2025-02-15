@@ -3,16 +3,12 @@ package com.desswapp.module4eqp2.homework.allison_olvera
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import android.widget.EditText
-import android.widget.RadioButton
-import android.widget.RadioGroup
 import android.widget.TextView
-import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.desswapp.module4eqp2.MainMenuActivityAMOM
+import com.desswapp.module4eqp2.excercise.home.allison_olvera.MainMenuActivityAMOM
 import com.desswapp.module4eqp2.R
 
 class UserDetailsActivityAMOM : AppCompatActivity() {

@@ -5,9 +5,9 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.desswapp.module4eqp2.R
-import com.desswapp.module4eqp2.excercise.home.oliver_atondo.excercise2.Excercise2Oliver
-import com.desswapp.module4eqp2.excercise.home.oliver_atondo.excersice1.InitialActivityOAG
-import com.desswapp.module4eqp2.excercise.home.oliver_atondo.tarea.RegisterActivityOliver
+import com.desswapp.module4eqp2.excercise.home.oliver_atondo.exercise2.Excercise2Oliver
+import com.desswapp.module4eqp2.excercise.home.oliver_atondo.exercise1.InitialActivityOAG
+import com.desswapp.module4eqp2.homework.oliver_atondo.RegisterActivityOliver
 
 class MenuDeOliver : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

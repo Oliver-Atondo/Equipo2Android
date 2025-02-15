@@ -1,4 +1,4 @@
-package com.desswapp.module4eqp2
+package com.desswapp.module4eqp2.excercise.home.allison_olvera
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,6 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.desswapp.module4eqp2.R
 import com.desswapp.module4eqp2.excercise.home.allison_olvera.exercise1.InitialActivityAMOM
 import com.desswapp.module4eqp2.excercise.home.allison_olvera.exercise2.MenuExercise2ActivityAMOM
 import com.desswapp.module4eqp2.homework.allison_olvera.RegisterUserActivityAMOM

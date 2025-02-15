@@ -1,4 +1,4 @@
-package com.desswapp.module4eqp2.excercise.home.oliver_atondo.excercise2.recycle
+package com.desswapp.module4eqp2.excercise.home.oliver_atondo.exercise2.recycle
 
 data class AlumnoEntity(
     val nombre: String,

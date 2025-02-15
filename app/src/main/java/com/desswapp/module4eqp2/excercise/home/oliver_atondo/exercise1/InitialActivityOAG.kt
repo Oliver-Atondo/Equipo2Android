@@ -1,4 +1,4 @@
-package com.desswapp.module4eqp2.excercise.home.oliver_atondo.excersice1
+package com.desswapp.module4eqp2.excercise.home.oliver_atondo.exercise1
 
 import android.content.Intent
 import android.net.Uri

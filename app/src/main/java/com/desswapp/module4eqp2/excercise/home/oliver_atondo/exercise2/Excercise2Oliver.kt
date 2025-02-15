@@ -1,4 +1,4 @@
-package com.desswapp.module4eqp2.excercise.home.oliver_atondo.excercise2
+package com.desswapp.module4eqp2.excercise.home.oliver_atondo.exercise2
 
 import android.os.Bundle
 import android.view.View
@@ -10,8 +10,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.desswapp.module4eqp2.R
-import com.desswapp.module4eqp2.excercise.home.oliver_atondo.excercise2.recycle.AlumnoAdapter
-import com.desswapp.module4eqp2.excercise.home.oliver_atondo.excercise2.recycle.AlumnoEntity
+import com.desswapp.module4eqp2.excercise.home.oliver_atondo.exercise2.recycle.AlumnoAdapter
+import com.desswapp.module4eqp2.excercise.home.oliver_atondo.exercise2.recycle.AlumnoEntity
 
 class Excercise2Oliver : AppCompatActivity() {
 
