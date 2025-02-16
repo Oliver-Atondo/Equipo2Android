@@ -11,6 +11,7 @@ import com.desswapp.module4eqp2.excercise.home.allison_olvera.MainMenuActivityAM
 import com.desswapp.module4eqp2.excercise.home.edgarmichaelperezvaldez.InitialActivityEMPV
 import com.desswapp.module4eqp2.excercise.home.fernando_hernandez.InitialActivityFHC
 import com.desswapp.module4eqp2.excercise.home.oliver_atondo.MenuDeOliver
+import com.desswapp.module4eqp2.finalExercise.FragmentControllerActivity
 
 class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,6 +28,7 @@ class HomeActivity : AppCompatActivity() {
         val btnMember2 = findViewById<Button>(R.id.btnMember2)
         val btnMember3 = findViewById<Button>(R.id.btnMember3)
         val btnMember4 = findViewById<Button>(R.id.btnMember4)
+        val btnFinalExercise = findViewById<Button>(R.id.btnFinalExercise)
         val btnExit = findViewById<Button>(R.id.btnExit)
 
         btnMember1.setOnClickListener { // Olvera Meza Allison Montserrat
@@ -46,6 +48,11 @@ class HomeActivity : AppCompatActivity() {
 
         btnMember4.setOnClickListener { // Hernández Calderón Fernando
             val intent = Intent(this, InitialActivityFHC::class.java)
+            startActivity(intent)
+        }
+
+        btnFinalExercise.setOnClickListener {
+            val intent = Intent(this, FragmentControllerActivity::class.java)
             startActivity(intent)
         }
 

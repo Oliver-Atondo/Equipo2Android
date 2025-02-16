@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".finalExercise.fragments.LogInFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="30dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="30dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidePercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/imgDescUserIcon"
+        android:src="@drawable/vc_user_icon"
+        app:layout_constraintStart_toEndOf="@id/guideStart"
+        app:layout_constraintEnd_toStartOf="@id/guideEnd"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/guidePercent"/>
+
+    <TextView
+        android:id="@+id/tvEmail"
+        style="@style/staticText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/tvLogin"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@id/guidePercent"
+        app:layout_constraintStart_toEndOf="@id/guideStart"
+        app:layout_constraintEnd_toStartOf="@id/guideEnd"/>
+
+    <EditText
+        android:id="@+id/etUser"
+        style="@style/editText"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="15dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/userLogin"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/tvEmail"
+        app:layout_constraintStart_toEndOf="@id/guideStart"
+        app:layout_constraintEnd_toStartOf="@id/guideEnd"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        app:boxBackgroundMode="filled"
+        android:hint="@string/tvPassword"
+        app:endIconMode="password_toggle"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/etUser"
+        app:layout_constraintStart_toEndOf="@id/guideStart"
+        app:layout_constraintEnd_toStartOf="@id/guideEnd">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPassword"
+            style="@style/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:minHeight="48dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:backgroundTint="@color/green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnLogIn"
+        app:layout_constraintStart_toEndOf="@id/guideStart"
+        app:layout_constraintEnd_toStartOf="@id/guideEnd"
+        app:layout_constraintTop_toBottomOf="@id/tilPassword"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:id="@+id/tvHaventAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/tvHaventAccount"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@id/guideStart"
+        app:layout_constraintTop_toBottomOf="@id/btnLogin" />
+
+    <TextView
+        android:id="@+id/tvRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="@string/tvLogin"
+        android:textStyle="italic"
+        android:textColor="@color/ligthBlue"
+        app:layout_constraintStart_toEndOf="@id/tvHaventAccount"
+        app:layout_goneMarginStart="10dp"
+        app:layout_constraintBaseline_toBaselineOf="@id/tvHaventAccount"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
