@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Module4Eqp2</string>
+    <string name="title">Equip 2</string>
+    <string name="equip">Members:</string>
+    <string name="member1">Olvera Meza Allison Montserrat</string>
+    <string name="member2">Atondo Gastelum Oliver Daniel</string>
+    <string name="member3">Perez Valdez Edgar Michael</string>
+    <string name="member4">Hernández Calderón Fernando</string>
+
+    <string name="btnBack">Return</string>
+    <string name="btnActivity">Launch activity</string>
+
+    <!-- Strings Excercise 1 FHC-->
+    <string name="initialTitle">Hello!</string>
+    <string name="btnNavegador">Go to YouTube</string>
+    <string name="btnExit">Exit</string>
+    <string name="txtDefault">Default</string>
+
+    <!-- Strings homework FHC-->
+    <string name="signupHW">Register</string>
+    <string name="nameHW">Name</string>
+    <string name="lastnameHW">Last name(s)</string>
+    <string name="fullnameHW">Full name</string>
+    <string name="emailHW">E-mail</string>
+    <string name="genderHW">Gender</string>
+    <string name="tpasswordHW">Register password</string>
+    <string name="passwordHW">Password</string>
+    <string name="repasswordHW">Confirm password</string>
+    <string name="genderHHW">Male</string>
+    <string name="genderWHW">Women</string>
+    <string name="genderOHW">Other</string>
+    <string name="registerHW">Register</string>
+    <string name="descriptionSignUpHW">User icon</string>
+    <string name="showPassHW">Show password</string>
+    <string name="accountHW">Account</string>
+    <string name="exercise">Exercises</string>
+    <string name="homework">Homework</string>
+    <string name="finalExercise">Final Exercise</string>
+    <string name="goExercise1">Go to exercise 1</string>
+    <string name="goExercise2">Go to exercise 2</string>
+    <string name="goHomeWork">Go to Homework</string>
+    <string name="goFinalExercise">Go to Final Exercise</string>
+
+    <!-- Strings Excercise 2 FHC -->
+    <string name="frameLTitle">Frame Layout</string>
+    <string name="linearLTitle">Linear Layout</string>
+    <string name="relativeLTitle">Relative Layout</string>
+    <string name="constraintLTitle">Constraint Layout</string>
+    <string name="btnSiguiente">Next Layout</string>
+    <string name="avance">Component used</string>
+    <string name="edittext">Write your name</string>
+    <string name="cbAgree">Accept terms and conditions</string>
+    <string name="cbPrivacy">Policy of privacy</string>
+
+    <!-- Strings Ejercicio Final -->
+    <string name="btnFinalExercise">Final Exercise</string>
+    <string name="imgDescUserIcon">User icon</string>
+    <string name="userInput">User</string>
+    <string name="userLogin">User/E-mail</string>
+    <string name="btnLogIn">Login</string>
+    <string name="btnSignUp">Register</string>
+    <string name="tvHaventAccount">¿Dont have an account?.</string>
+    <string name="tvLogin">Login</string>
+    <string name="tvLastName">Last name</string>
+    <string name="tvFullname">Full name</string>
+    <string name="tvPassword">Password</string>
+    <string name="tvRePassword">Confirm password</string>
+    <string name="tvEmail">E-mail</string>
+    <string name="hint_nombre">Name</string>
+    <string name="hint_apellido">Last name</string>
+    <string name="hint_correo">E-mail</string>
+    <string name="hint_contraseña">Password</string>
+    <string name="button_registrar">Register</string>
+    <string name="tvName">Name</string>
+    <string name="genderH">Male</string>
+    <string name="genderW">Women</string>
+    <string name="genderO">Other</string>
+    <string name="gender">Gender</string>
+    <string name="tpassword">Register password</string>
+    <string name="createAccount">Create account</string>
+    <string name="account">Account</string>
+    <string name="ErrorInfo">An error has occurred</string>
+
+    <!-- Strings errores -->
+    <string name="errPasswordHW">Password error</string>
+    <string name="errPasswordLengthHW">Insufficient length</string>
+    <string name="errPasswordSecurityHW">Password not secure</string>
+    <string name="errPasswordDifferentHW">Passwords do not match</string>
+    <string name="errEmptyHW">Required field</string>
+    <string name="errEmailHW">Email invalid</string>
+    <string name="errGenderHW">Required field</string>
+    <string name="errGeneralHW">Revise data entered</string>
+
+
+
+</resources>

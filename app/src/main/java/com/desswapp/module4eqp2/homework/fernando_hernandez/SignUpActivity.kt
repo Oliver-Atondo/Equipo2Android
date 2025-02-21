@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.desswapp.module4eqp2.R
+import com.desswapp.module4eqp2.finalExercise.UserInformation
 
 class SignUpActivity : AppCompatActivity() {
     @SuppressLint("ClickableViewAccessibility")

@@ -71,4 +71,29 @@
     <string name="hint_contraseña">Contraseña</string>
     <string name="button_registrar">Registrar</string>
 
+
+    <!-- Strings Ejercicio Final -->
+    <string name="btnFinalExercise">Ejercicio final</string>
+    <string name="imgDescUserIcon">Icono de usuario</string>
+    <string name="userInput">Usuario</string>
+    <string name="userLogin">Usuario/Correo electrónico</string>
+    <string name="btnLogIn">Iniciar sesión</string>
+    <string name="btnSignUp">Registrarse</string>
+    <string name="tvHaventAccount">¿No tienes una cuenta?.</string>>
+    <string name="tvLogin">Ingresar</string>
+    <string name="tvName">Nombre</string>
+    <string name="tvLastName">Apellido(s)</string>
+    <string name="tvFullname">Nombre completo</string>
+    <string name="tvPassword">Contraseña</string>
+    <string name="tvRePassword">Confirmar Contraseña</string>
+    <string name="tvEmail">Correo eléctronico</string>
+    <string name="genderH">Hombre</string>
+    <string name="genderW">Mujer</string>
+    <string name="genderO">Otro</string>
+    <string name="gender">Genero</string>
+    <string name="tpassword">Establecer contraseña</string>
+    <string name="createAccount">Crear cuenta</string>
+    <string name="account">Cuenta</string>
+    <string name="ErrorInfo">Ocurrio un error</string>
+
 </resources>

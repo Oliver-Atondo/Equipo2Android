@@ -8,4 +8,7 @@
     <color name="orange">#E9640C</color>
     <color name="purple">#860CE9</color>
     <color name="bakcground">#0D36C589</color>
+    <color name="ligthBlue">#1A95E2</color>
+    <color name="ligthGray">#AA737171</color>
+
 </resources>
