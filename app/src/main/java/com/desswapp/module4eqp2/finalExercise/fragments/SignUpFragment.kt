@@ -1,6 +1,8 @@
 package com.desswapp.module4eqp2.finalExercise.fragments
 
 import android.content.Intent
+import android.content.res.ColorStateList
+import android.graphics.Color
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -11,6 +13,7 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.EditText
 import android.widget.Toast
+import androidx.core.content.ContextCompat
 import com.desswapp.module4eqp2.R
 import com.desswapp.module4eqp2.databinding.FragmentSignUpBinding
 import com.desswapp.module4eqp2.finalExercise.FragmentControllerActivity
@@ -44,6 +47,7 @@ class SignUpFragment : Fragment() {
         val rbtngGenero = binding.rbtngGenero
         var genero : String = ""
         val spCountry = binding.spCountry
+        val termsAccepted = binding.cbTerms
 
         btnSignUp.setOnClickListener{
 
@@ -53,6 +57,15 @@ class SignUpFragment : Fragment() {
             if (selectedCountryPosition == 0) {
                 Toast.makeText(requireContext(), getString(R.string.selecterInvalidC), Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
+            }
+
+            val isTermsAccepted = termsAccepted.isChecked
+            if (!isTermsAccepted) {
+                termsAccepted.buttonTintList = ColorStateList.valueOf(ContextCompat.getColor(requireContext(), R.color.red))
+                Toast.makeText(requireContext(), getString(R.string.Conditions), Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            } else {
+                termsAccepted.buttonTintList = ColorStateList.valueOf(Color.parseColor("#644D9F"))
             }
 
             if (verifyData(etName, etLastName, etEmail, etPassword, etRePassword, genero, selectedCountry)) {
@@ -73,6 +86,7 @@ class SignUpFragment : Fragment() {
                 Toast.makeText(requireContext(), getString(R.string.errGeneralHW), Toast.LENGTH_SHORT).show()
             }
         }
+
         rbtngGenero.setOnCheckedChangeListener { group, checkedId ->
             genero = getGender(checkedId, true)
         }
