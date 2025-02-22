@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Module4Eqp2</string>
-    <string name="title">Equip 2</string>
+    <string name="title">Team 2</string>
     <string name="equip">Members:</string>
     <string name="member1">Olvera Meza Allison Montserrat</string>
     <string name="member2">Atondo Gastelum Oliver Daniel</string>
     <string name="member3">Perez Valdez Edgar Michael</string>
     <string name="member4">Hernández Calderón Fernando</string>
 
-    <string name="btnBack">Return</string>
+    <string name="btnBack">Back</string>
     <string name="btnActivity">Launch activity</string>
 
     <!-- Strings Excercise 1 FHC-->
@@ -59,9 +59,9 @@
     <string name="userInput">User</string>
     <string name="userLogin">User/E-mail</string>
     <string name="btnLogIn">Login</string>
-    <string name="btnSignUp">Sign Up</string>
-    <string name="tvHaventAccount">¿Dont have an account?.</string>
-    <string name="tvLogin">Login</string>
+    <string name="btnSignUp">Register</string>
+    <string name="tvHaventAccount">Dont have an account? </string>
+    <string name="tvLogin"> Create one </string>
     <string name="tvLastName">Last name</string>
     <string name="tvFullname">Full name</string>
     <string name="tvPassword">Password</string>
@@ -127,7 +127,7 @@
     <string name="errEmptyHW">Required field</string>
     <string name="errEmailHW">Email invalid</string>
     <string name="errGenderHW">Required field</string>
-    <string name="errGeneralHW">Revise data entered</string>
+    <string name="errGeneralHW">Check data entered</string>
 
 
 
