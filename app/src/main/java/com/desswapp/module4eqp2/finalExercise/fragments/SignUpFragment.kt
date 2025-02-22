@@ -51,7 +51,7 @@ class SignUpFragment : Fragment() {
             val selectedCountryPosition = spCountry.selectedItemPosition
 
             if (selectedCountryPosition == 0) {
-                Toast.makeText(requireContext(), "Por favor selecciona un país válido", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(), getString(R.string.selecterInvalidC), Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
 
@@ -61,7 +61,7 @@ class SignUpFragment : Fragment() {
                     etLastName.text.toString(),
                     etEmail.text.toString(),
                     genero,
-                    selectedCountry, // ✅ Ahora pasamos el String correcto
+                    selectedCountry,
                     etPassword.text.toString()
                 )
                 val intent = Intent(requireContext(), UserAccountActivity::class.java).apply {
@@ -108,7 +108,7 @@ class SignUpFragment : Fragment() {
 
     private fun verifyData(name: EditText, lastName: EditText, email: EditText, password: EditText, rePassword: EditText, genero: String, country: String): Boolean {
         val valide = isNotEmptyData(name) && isNotEmptyData(lastName) && isEmailValid(email)
-                && verifyGender(genero) && verifyPassword(password, rePassword) && country != "No selección"
+                && verifyGender(genero) && verifyPassword(password, rePassword) && country != getString(R.string.NoSelection)
         return valide
     }
 

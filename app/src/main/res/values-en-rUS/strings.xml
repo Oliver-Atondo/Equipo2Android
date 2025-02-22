@@ -81,6 +81,8 @@
     <string name="createAccount">Create account</string>
     <string name="account">Account</string>
     <string name="ErrorInfo">An error has occurred</string>
+    <string name="NoSelection">No selection</string>
+    <string name="selecterInvalidC">Please select a country</string>
     <string name="tcountry">Country</string>
     <string-array name="countries_array">
         <item>No selection</item>
