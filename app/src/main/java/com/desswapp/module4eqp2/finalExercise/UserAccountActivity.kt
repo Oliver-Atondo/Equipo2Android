@@ -51,11 +51,13 @@ class UserAccountActivity : AppCompatActivity() {
             val tvFullNameSignUp = binding.tvFullNameSignUp
             val tvEmailSignUp = binding.tvEmailSignUp
             val tvGenderSignUp = binding.tvGenderSignUp
+            val tvCountrySignUp = binding.tvCountrySignUp
             val tvPasswordSignUp = binding.tvPasswordSignUp
 
             tvFullNameSignUp.text = userInfo.name + " " + userInfo.lastName
             tvEmailSignUp.text = userInfo.email
             tvGenderSignUp.text = userInfo.gender
+            tvCountrySignUp.text = userInfo.country
             tvPasswordSignUp.text = userInfo.password
         }else{
             lyLogin.visibility = View.VISIBLE

@@ -114,6 +114,21 @@
             android:layout_marginTop="30dp" />
 
         <TextView
+            android:id="@+id/tvTitleCountrySignUp"
+            style="@style/staticText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/tcountry" />
+
+        <TextView
+            android:id="@+id/tvCountrySignUp"
+            style="@style/staticTextInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp" />
+
+        <TextView
             android:id="@+id/tvTitlePasswordSignUp"
             style="@style/staticText"
             android:layout_width="wrap_content"

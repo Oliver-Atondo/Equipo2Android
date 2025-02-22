@@ -95,5 +95,38 @@
     <string name="createAccount">Crear cuenta</string>
     <string name="account">Cuenta</string>
     <string name="ErrorInfo">Ocurrio un error</string>
+    <string name="tcountry">País</string>
+    <string-array name="countries_array">
+        <item>No selección</item>
+        <item>México</item>
+        <item>Argentina</item>
+        <item>Colombia</item>
+        <item>Ecuador</item>
+        <item>Perú</item>
+        <item>Chile</item>
+        <item>Venezuela</item>
+        <item>España</item>
+        <item>Guatemala</item>
+        <item>Cuba</item>
+        <item>Bolivia</item>
+        <item>República Dominicana</item>
+        <item>Honduras</item>
+        <item>Paraguay</item>
+        <item>El Salvador</item>
+        <item>Nicaragua</item>
+        <item>Panamá</item>
+        <item>Costa Rica</item>
+        <item>Puerto Rico</item>
+        <item>Uruguay</item>
+        <item>Brasil</item>
+        <item>Canadá</item>
+        <item>Estados Unidos</item>
+        <item>Francia</item>
+        <item>Reino Unido</item>
+        <item>Alemania</item>
+        <item>Italia</item>
+        <item>Australia</item>
+        <item>India</item>
+    </string-array>
 
 </resources>

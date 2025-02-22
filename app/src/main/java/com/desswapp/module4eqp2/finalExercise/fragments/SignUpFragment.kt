@@ -7,6 +7,8 @@ import android.view.LayoutInflater
 import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
+import android.widget.AdapterView
+import android.widget.ArrayAdapter
 import android.widget.EditText
 import android.widget.Toast
 import com.desswapp.module4eqp2.R
@@ -41,12 +43,27 @@ class SignUpFragment : Fragment() {
         val etRePassword = binding.etRePassword
         val rbtngGenero = binding.rbtngGenero
         var genero : String = ""
-
+        val spCountry = binding.spCountry
 
         btnSignUp.setOnClickListener{
-            if(verifyData(etName, etLastName, etEmail, etPassword, etRePassword,genero)){
-                val userInfo = UserInformation(etName.text.toString(), etLastName.text.toString(),
-                    etEmail.text.toString(), genero, etPassword.text.toString())
+
+            val selectedCountry = spCountry.selectedItem.toString()
+            val selectedCountryPosition = spCountry.selectedItemPosition
+
+            if (selectedCountryPosition == 0) {
+                Toast.makeText(requireContext(), "Por favor selecciona un país válido", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
+            if (verifyData(etName, etLastName, etEmail, etPassword, etRePassword, genero, selectedCountry)) {
+                val userInfo = UserInformation(
+                    etName.text.toString(),
+                    etLastName.text.toString(),
+                    etEmail.text.toString(),
+                    genero,
+                    selectedCountry, // ✅ Ahora pasamos el String correcto
+                    etPassword.text.toString()
+                )
                 val intent = Intent(requireContext(), UserAccountActivity::class.java).apply {
                     putExtra("EXTRA_USRINFO", userInfo)
                     putExtra("EXTRA_ISLOGIN", false)
@@ -59,6 +76,13 @@ class SignUpFragment : Fragment() {
         rbtngGenero.setOnCheckedChangeListener { group, checkedId ->
             genero = getGender(checkedId, true)
         }
+
+        val data = resources.getStringArray(R.array.countries_array).toList()
+
+        val adapter = ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, data)
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        spCountry.adapter = adapter
+
     }
 
     override fun onPause() {
@@ -82,9 +106,9 @@ class SignUpFragment : Fragment() {
         fun newInstance() = SignUpFragment()
     }
 
-    private fun verifyData(name: EditText, lastName: EditText, email: EditText, password: EditText, rePassword: EditText, genero: String): Boolean {
+    private fun verifyData(name: EditText, lastName: EditText, email: EditText, password: EditText, rePassword: EditText, genero: String, country: String): Boolean {
         val valide = isNotEmptyData(name) && isNotEmptyData(lastName) && isEmailValid(email)
-                && verifyGender(genero) && verifyPassword(password, rePassword)
+                && verifyGender(genero) && verifyPassword(password, rePassword) && country != "No selección"
         return valide
     }
 

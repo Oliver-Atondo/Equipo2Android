@@ -36,8 +36,8 @@ class LogInFragment : Fragment() {
         (activity as FragmentControllerActivity).supportActionBar?.title = getString(R.string.btnFinalExercise)
 
         btnLogIn.setOnClickListener{
-            if(verifyData(etUser, etPassword)){
-                val userInfo = UserInformation("", "",etUser.text.toString(),"",etPassword.text.toString())
+            if (verifyData(etUser, etPassword)) {
+                val userInfo = UserInformation("", "",etUser.text.toString(),"", "", etPassword.text.toString())
                 val intent = Intent(requireContext(), UserAccountActivity::class.java).apply {
                     putExtra("EXTRA_USRINFO", userInfo)
                     putExtra("EXTRA_ISLOGIN", true)

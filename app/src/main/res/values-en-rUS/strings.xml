@@ -59,7 +59,7 @@
     <string name="userInput">User</string>
     <string name="userLogin">User/E-mail</string>
     <string name="btnLogIn">Login</string>
-    <string name="btnSignUp">Register</string>
+    <string name="btnSignUp">Sign Up</string>
     <string name="tvHaventAccount">¿Dont have an account?.</string>
     <string name="tvLogin">Login</string>
     <string name="tvLastName">Last name</string>
@@ -81,6 +81,39 @@
     <string name="createAccount">Create account</string>
     <string name="account">Account</string>
     <string name="ErrorInfo">An error has occurred</string>
+    <string name="tcountry">Country</string>
+    <string-array name="countries_array">
+        <item>No selection</item>
+        <item>Mexico</item>
+        <item>Argentina</item>
+        <item>Colombia</item>
+        <item>Ecuador</item>
+        <item>Peru</item>
+        <item>Chile</item>
+        <item>Venezuela</item>
+        <item>Spain</item>
+        <item>Guatemala</item>
+        <item>Cuba</item>
+        <item>Bolivia</item>
+        <item>Dominican Republic</item>
+        <item>Honduras</item>
+        <item>Paraguay</item>
+        <item>El Salvador</item>
+        <item>Nicaragua</item>
+        <item>Panama</item>
+        <item>Costa Rica</item>
+        <item>Puerto Rico</item>
+        <item>Uruguay</item>
+        <item>Brazil</item>
+        <item>Canada</item>
+        <item>United States</item>
+        <item>France</item>
+        <item>United Kingdom</item>
+        <item>Germany</item>
+        <item>Italy</item>
+        <item>Australia</item>
+        <item>India</item>
+    </string-array>
 
     <!-- Strings errores -->
     <string name="errPasswordHW">Password error</string>

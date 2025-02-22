@@ -158,6 +158,21 @@
             </RadioGroup>
 
             <TextView
+                android:id="@+id/tvCountry"
+                style="@style/staticText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="@string/tcountry"/>
+
+            <Spinner
+                android:id="@+id/spCountry"
+                style="@style/staticText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
                 android:id="@+id/tvTContraseña"
                 style="@style/staticText"
                 android:layout_width="match_parent"
