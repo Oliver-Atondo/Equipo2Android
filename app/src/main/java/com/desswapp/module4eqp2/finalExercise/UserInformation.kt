@@ -7,5 +7,6 @@ class UserInformation (
     var lastName: String,
     var email: String,
     var gender: String,
+    var country : String,
     var password: String
 ): Serializable

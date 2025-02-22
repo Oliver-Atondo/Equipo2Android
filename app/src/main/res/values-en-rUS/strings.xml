@@ -60,7 +60,7 @@
     <string name="userLogin">User/E-mail</string>
     <string name="btnLogIn">Login</string>
     <string name="btnSignUp">Register</string>
-    <string name="tvHaventAccount">¿Dont have an account? </string>
+    <string name="tvHaventAccount">Dont have an account? </string>
     <string name="tvLogin"> Create one </string>
     <string name="tvLastName">Last name</string>
     <string name="tvFullname">Full name</string>
@@ -81,6 +81,43 @@
     <string name="createAccount">Create account</string>
     <string name="account">Account</string>
     <string name="ErrorInfo">An error has occurred</string>
+    <string name="NoSelection">No selection</string>
+    <string name="TermAndCond">"I accept the terms and conditions"</string>
+    <string name="Conditions">You must accept the terms and conditions</string>
+    <string name="selecterInvalidC">Please select a country</string>
+    <string name="tcountry">Country</string>
+    <string-array name="countries_array">
+        <item>No selection</item>
+        <item>Argentina</item>
+        <item>Australia</item>
+        <item>Bolivia</item>
+        <item>Brazil</item>
+        <item>Canada</item>
+        <item>Chile</item>
+        <item>Colombia</item>
+        <item>Costa Rica</item>
+        <item>Cuba</item>
+        <item>Dominican Republic</item>
+        <item>Ecuador</item>
+        <item>El Salvador</item>
+        <item>France</item>
+        <item>Germany</item>
+        <item>Guatemala</item>
+        <item>Honduras</item>
+        <item>India</item>
+        <item>Italy</item>
+        <item>Mexico</item>
+        <item>Nicaragua</item>
+        <item>Panama</item>
+        <item>Paraguay</item>
+        <item>Peru</item>
+        <item>Puerto Rico</item>
+        <item>Spain</item>
+        <item>United Kingdom</item>
+        <item>United States</item>
+        <item>Uruguay</item>
+        <item>Venezuela</item>
+    </string-array>
 
     <!-- Strings errores -->
     <string name="errPasswordHW">Password error</string>

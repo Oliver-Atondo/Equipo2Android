@@ -1,14 +1,19 @@
 package com.desswapp.module4eqp2.finalExercise.fragments
 
 import android.content.Intent
+import android.content.res.ColorStateList
+import android.graphics.Color
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
+import android.widget.AdapterView
+import android.widget.ArrayAdapter
 import android.widget.EditText
 import android.widget.Toast
+import androidx.core.content.ContextCompat
 import com.desswapp.module4eqp2.R
 import com.desswapp.module4eqp2.databinding.FragmentSignUpBinding
 import com.desswapp.module4eqp2.finalExercise.FragmentControllerActivity
@@ -41,12 +46,37 @@ class SignUpFragment : Fragment() {
         val etRePassword = binding.etRePassword
         val rbtngGenero = binding.rbtngGenero
         var genero : String = ""
-
+        val spCountry = binding.spCountry
+        val termsAccepted = binding.cbTerms
 
         btnSignUp.setOnClickListener{
-            if(verifyData(etName, etLastName, etEmail, etPassword, etRePassword,genero)){
-                val userInfo = UserInformation(etName.text.toString(), etLastName.text.toString(),
-                    etEmail.text.toString(), genero, etPassword.text.toString())
+
+            val selectedCountry = spCountry.selectedItem.toString()
+            val selectedCountryPosition = spCountry.selectedItemPosition
+
+            if (selectedCountryPosition == 0) {
+                Toast.makeText(requireContext(), getString(R.string.selecterInvalidC), Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
+            val isTermsAccepted = termsAccepted.isChecked
+            if (!isTermsAccepted) {
+                termsAccepted.buttonTintList = ColorStateList.valueOf(ContextCompat.getColor(requireContext(), R.color.red))
+                Toast.makeText(requireContext(), getString(R.string.Conditions), Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            } else {
+                termsAccepted.buttonTintList = ColorStateList.valueOf(Color.parseColor("#644D9F"))
+            }
+
+            if (verifyData(etName, etLastName, etEmail, etPassword, etRePassword, genero, selectedCountry)) {
+                val userInfo = UserInformation(
+                    etName.text.toString(),
+                    etLastName.text.toString(),
+                    etEmail.text.toString(),
+                    genero,
+                    selectedCountry,
+                    etPassword.text.toString()
+                )
                 val intent = Intent(requireContext(), UserAccountActivity::class.java).apply {
                     putExtra("EXTRA_USRINFO", userInfo)
                     putExtra("EXTRA_ISLOGIN", false)
@@ -56,9 +86,17 @@ class SignUpFragment : Fragment() {
                 Toast.makeText(requireContext(), getString(R.string.errGeneralHW), Toast.LENGTH_SHORT).show()
             }
         }
+
         rbtngGenero.setOnCheckedChangeListener { group, checkedId ->
             genero = getGender(checkedId, true)
         }
+
+        val data = resources.getStringArray(R.array.countries_array).toList()
+
+        val adapter = ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, data)
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        spCountry.adapter = adapter
+
     }
 
     override fun onPause() {
@@ -82,9 +120,9 @@ class SignUpFragment : Fragment() {
         fun newInstance() = SignUpFragment()
     }
 
-    private fun verifyData(name: EditText, lastName: EditText, email: EditText, password: EditText, rePassword: EditText, genero: String): Boolean {
+    private fun verifyData(name: EditText, lastName: EditText, email: EditText, password: EditText, rePassword: EditText, genero: String, country: String): Boolean {
         val valide = isNotEmptyData(name) && isNotEmptyData(lastName) && isEmailValid(email)
-                && verifyGender(genero) && verifyPassword(password, rePassword)
+                && verifyGender(genero) && verifyPassword(password, rePassword) && country != getString(R.string.NoSelection)
         return valide
     }
 
